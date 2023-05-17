@@ -1,4 +1,4 @@
-fetch("https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+*+from+ps+where+default_flag=1+and+(hostname=%27TOI-201%27+or+hostname=%2714+Her%27)&format=json")
+planets=fetch("https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+*+from+ps+where+default_flag=1+and+(hostname=%27TOI-201%27+or+hostname=%2714+Her%27)&format=json")
 	.then(function(response){
 	   return response.json();
 	})
